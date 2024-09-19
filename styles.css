@@ -11,20 +11,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding */
     background-color: #111;
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 30px; /* Reduced height */
 }
 
-.logo {
+/* .logo {
     font-size: 20px;
     font-weight: bold;
-   }
-   .logo img{
-    width: 50%;
-   }
+   } */
+.logo img{
+    height: 40px;
+    width: auto;
+}
 
 nav ul {
     list-style: none;
@@ -34,12 +36,18 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px; /* Adjusted font size */
+    padding: 8px 10px; /* Reduced padding */
+}
+
+nav ul li a:hover {
+    color: #e50914; /* Netflix red on hover */
 }
 
 .featured {
@@ -104,7 +112,13 @@ nav ul li a {
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
+    padding: 0 10px;       /* Padding on left and right, no top and bottom padding */
+    text-align: center;     /* Horizontally center text */
     background-color: #111;
+    height: 30px;           /* Height of the footer */
+    width: 100%;            /* Full width */
+    display: flex;          /* Flexbox layout for vertical centering */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center;         
+    
 }
